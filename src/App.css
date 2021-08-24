@@ -1,0 +1,33 @@
+/* antd */
+@import 'antd/dist/antd.min.css';
+
+.App {
+
+}
+
+.container1 {
+  height: 800px;
+  width: 800px;
+  background: gray;
+
+}
+
+/*清除浮动*/
+.container1:after{
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.container1 .left{
+  float: left;
+  width: 100px;
+}
+
+.container1 .right {
+  overflow: hidden;
+}
+
